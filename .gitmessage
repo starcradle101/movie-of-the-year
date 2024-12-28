@@ -1,0 +1,24 @@
+# <type>(<scope>): <subject>
+# 
+# 예시:
+# feat(search): 영화 검색 기능 구현
+# fix(api): TMDB API 응답 처리 버그 수정
+# style(common): 버튼 컴포넌트 스타일 개선
+#
+# type list
+#   feat: 새로운 기능
+#   fix: 버그 수정
+#   style: 코드 포맷팅
+#   refactor: 코드 리팩토링
+#   chore: 빌드 작업
+#   docs: 문서 수정
+#   test: 테스트 코드
+#
+# scope list
+#   home: 홈 페이지
+#   user: 사용자 페이지
+#   search: 검색 페이지
+#   result: 결과 페이지
+#   common: 공통 컴포넌트
+#   api: API 관련
+#   share: 공유 기능
