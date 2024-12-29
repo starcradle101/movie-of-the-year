@@ -5,8 +5,8 @@
 @font-face {
   font-family: "Moneygraphy";
   src:
-    url("@/assets/fonts/Moneygraphy-Rounded.woff2") format("font-woff2"),
-    url("@/assets/fonts/Moneygraphy-Rounded.woff") format("font-woff");
+    url("@/assets/fonts/Moneygraphy-Pixel.woff2") format("font-woff2"),
+    url("@/assets/fonts/Moneygraphy-Pixel.woff") format("font-woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
