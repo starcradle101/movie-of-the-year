@@ -36,7 +36,7 @@ export default function HomePage() {
         className='h-14 w-72 rounded bg-emerald-500 px-6 py-4 text-center font-medium transition-colors hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2'
         aria-label='영화 선택 페이지로 이동하기'
       >
-        영화 선택하러 가기
+        영화 모티하기
       </button>
     </section>
   );
