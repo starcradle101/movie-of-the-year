@@ -6,7 +6,7 @@ export default function HomePage() {
 
   return (
     <section
-      className='flex h-full flex-col items-center justify-between py-16'
+      className='flex h-full flex-col items-center justify-between pb-10 pt-24'
       aria-labelledby='page-title'
     >
       <h1 className='text-center text-4xl' id='page-title'>
