@@ -2,10 +2,8 @@ import { Outlet } from "react-router";
 
 export const BaseLayout = (): JSX.Element => {
   return (
-    <div className='min-h-screen bg-[#121212]'>
-      <div className='mx-auto max-w-2xl px-4 text-white'>
-        <Outlet />
-      </div>
-    </div>
+    <main className='mx-auto h-dvh max-w-2xl bg-[#121212] px-4 text-white'>
+      <Outlet />
+    </main>
   );
 };
