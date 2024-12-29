@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { Layout } from "./components/layout/Layout";
+import { HeaderLayout } from "./components/layout/HeaderLayout";
+import { BaseLayout } from "./components/layout/BaseLayout";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import UserPage from "./pages/user/UserPage";
 import SearchPage from "./pages/search/SearchPage";
@@ -11,13 +12,18 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    element: <Layout />,
+    element: <BaseLayout />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/user", element: <UserPage /> },
-      { path: "/search", element: <SearchPage /> },
       { path: "/result", element: <ResultPage /> },
       { path: "*", element: <NotFoundPage /> },
+    ],
+  },
+  {
+    element: <HeaderLayout />,
+    children: [
+      { path: "/user", element: <UserPage /> },
+      { path: "/search", element: <SearchPage /> },
     ],
   },
 ]);
