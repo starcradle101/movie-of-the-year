@@ -24,7 +24,7 @@ export default function UserPage() {
   };
 
   return (
-    <div className='flex h-full flex-col py-16'>
+    <div className='flex h-full flex-col py-10'>
       <h1 className='text-center text-3xl leading-loose'>
         크레딧의 첫 장면을 장식할
         <br />
