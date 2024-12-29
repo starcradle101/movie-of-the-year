@@ -5,10 +5,10 @@ export const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header role='banner'>
+    <header role='banner' className='py-4'>
       <button
         onClick={() => navigate(-1)}
-        className='flex items-center rounded-lg py-4 transition-colors hover:bg-gray-800'
+        className='flex items-center rounded-lg transition-colors hover:bg-gray-800'
         aria-label='이전으로 돌아가기'
       >
         <img src={backIcon} alt='' className='h-5 w-5' aria-hidden='true' />
