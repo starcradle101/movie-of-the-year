@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { MovieItem } from "./MovieItem";
+import { MovieListSkeleton } from "./MovieSkeletons";
 
 interface MovieListProps {
   movies: Movie[];
@@ -7,6 +8,7 @@ interface MovieListProps {
   error: Error | null;
   hasMore: boolean;
   onLoadMore: () => void;
+  onMovieSelect: (movie: Movie) => void;
 }
 
 export const MovieList = ({
@@ -15,6 +17,7 @@ export const MovieList = ({
   error,
   hasMore,
   onLoadMore,
+  onMovieSelect,
 }: MovieListProps) => {
   const observerRef = useRef<HTMLDivElement>(null);
 
@@ -47,21 +50,23 @@ export const MovieList = ({
   return (
     <section className='grid grid-cols-2 gap-4 p-2 md:grid-cols-3'>
       {movies.map((movie) => (
-        <MovieItem key={movie.id} movie={movie} />
+        <MovieItem
+          key={movie.id}
+          movie={movie}
+          onClick={() => onMovieSelect(movie)}
+        />
       ))}
 
-      <div
-        ref={observerRef}
-        className='col-span-2 py-4 text-center md:col-span-3'
-      >
-        {isLoading
-          ? "불러오는 중..."
-          : hasMore
-            ? "스크롤하여 더보기"
-            : movies.length > 0
-              ? "모든 영화를 불러왔어요!"
-              : null}
-      </div>
+      {isLoading && <MovieListSkeleton />}
+
+      {movies.length > 0 && (
+        <div
+          ref={observerRef}
+          className='col-span-2 py-4 text-center text-gray-400 md:col-span-3'
+        >
+          {hasMore ? "스크롤하여 더보기" : "모든 영화를 불러왔어요!"}
+        </div>
+      )}
     </section>
   );
 };
