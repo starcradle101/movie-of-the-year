@@ -25,7 +25,7 @@ export default function UserPage() {
 
   return (
     <div className='flex h-full flex-col py-10'>
-      <h1 className='text-center text-3xl leading-loose'>
+      <h1 className='text-center text-2xl leading-loose'>
         크레딧의 첫 장면을 장식할
         <br />
         당신의 <span className='text-emerald-400'>이름</span>을 알려주세요
