@@ -1,7 +1,7 @@
 declare type Movie = {
   poster_path: string | null;
   title: string;
-  release_date: string;
+  release_date?: string;
   id: number;
 };
 
