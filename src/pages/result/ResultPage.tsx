@@ -4,6 +4,7 @@ import { MovieResult } from "../../components/movie/MovieResult";
 import { Helmet } from "react-helmet-async";
 
 export default function ResultPage() {
+  const currentUrl = window.location.href;
   const [searchParams] = useSearchParams();
 
   const username = searchParams.get("username");
@@ -25,6 +26,7 @@ export default function ResultPage() {
           content={`${username}님의 올해의 영화는 ${movieTitle}`}
         />
         <meta property='og:description' content={quote} />
+        <meta property='og:url' content={currentUrl} />
         <meta
           property='og:image'
           content={
