@@ -27,7 +27,7 @@ export default function SearchPage() {
   };
 
   return (
-    <div className='flex h-full flex-col overflow-hidden pb-4 pt-10'>
+    <div className='flex h-full flex-col overflow-hidden py-4'>
       <SearchHeader username={username} />
 
       <SearchForm
