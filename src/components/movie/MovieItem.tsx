@@ -27,7 +27,9 @@ export const MovieItem = ({ movie, onClick }: MovieItemProps) => {
         </div>
       )}
       <div className='absolute bottom-0 w-full bg-black/60 p-4 backdrop-blur-sm'>
-        <h3 className='mb-1 truncate font-bold text-white'>{movie.title}</h3>
+        <h3 className='mb-1 truncate text-base font-medium text-white'>
+          {movie.title}
+        </h3>
         <p className='text-sm text-gray-300'>{formattedDate}</p>
       </div>
     </button>
