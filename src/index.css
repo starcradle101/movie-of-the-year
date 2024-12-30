@@ -5,8 +5,8 @@
 @font-face {
   font-family: "Moneygraphy";
   src:
-    url("/fonts/Moneygraphy-Pixel.woff2") format("font-woff2"),
-    url("/fonts/Moneygraphy-Pixel.woff") format("font-woff");
+    url("/fonts/Moneygraphy-Pixel.woff2") format("woff2"),
+    url("/fonts/Moneygraphy-Pixel.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -14,6 +14,6 @@
 
 @layer base {
   html {
-    font-family: Moneygraphy, "sans-serif";
+    font-family: Moneygraphy, sans-serif;
   }
 }
