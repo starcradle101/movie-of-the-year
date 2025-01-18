@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { MovieItem } from "./MovieItem";
 import { MovieListSkeleton } from "./MovieSkeletons";
+import { EmptySearchResult } from "./EmptySearchResult";
 
 interface MovieListProps {
   movies: Movie[];
@@ -45,6 +46,10 @@ export const MovieList = ({
 
   if (error) {
     return <div className='text-center text-red-500'>{error.message}</div>;
+  }
+
+  if (!isLoading && movies.length === 0) {
+    return <EmptySearchResult />;
   }
 
   return (

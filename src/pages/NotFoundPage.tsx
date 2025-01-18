@@ -9,7 +9,7 @@ export const NotFoundPage = () => {
       <p className='mt-2 text-xl'>페이지를 찾을 수 없습니다</p>
       <button
         onClick={() => navigate("/")}
-        className='mt-4 rounded bg-emerald-500 px-4 py-2 text-lg text-white hover:bg-emerald-600'
+        className='mt-4 rounded bg-emerald-500 px-4 py-2 text-lg text-[#121212] hover:bg-emerald-600'
       >
         메인으로
       </button>

@@ -52,7 +52,7 @@ export default function HomePage() {
 
         <button
           onClick={() => navigate("/user")}
-          className='h-14 w-72 rounded-xl bg-emerald-400 px-6 py-4 text-center font-medium transition-colors hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2'
+          className='h-14 w-72 rounded-xl bg-emerald-400 px-6 py-4 text-center font-medium text-[#121212] transition-colors hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2'
           aria-label='영화 선택 페이지로 이동하기'
         >
           영화 모티하기
