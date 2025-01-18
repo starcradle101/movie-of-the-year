@@ -36,7 +36,7 @@ export default function SearchPage() {
         onSubmit={handleSubmit}
       />
 
-      <div className='scrollbar-hide flex-1 overflow-y-scroll'>
+      <div className='flex-1 overflow-y-scroll scrollbar-hide'>
         <MovieList
           movies={fetchState.data}
           isLoading={fetchState.loading}
