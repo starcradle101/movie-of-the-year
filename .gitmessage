@@ -1,9 +1,10 @@
+# Title Message
+
+# Body Message (Optional)
+
+# Footer (Optional)
+
 # <type>(<scope>): <subject>
-# 
-# 예시:
-# feat(search): 영화 검색 기능 구현
-# fix(api): TMDB API 응답 처리 버그 수정
-# style(common): 버튼 컴포넌트 스타일 개선
 #
 # type list
 #   feat: 새로운 기능

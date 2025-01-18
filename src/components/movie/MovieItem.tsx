@@ -26,7 +26,7 @@ export const MovieItem = ({ movie, onClick }: MovieItemProps) => {
         className='aspect-[2/3] w-full object-cover transition-opacity group-hover:opacity-75'
         loading='lazy'
       />
-      <div className='absolute bottom-0 w-full bg-black/60 p-4 backdrop-blur-sm'>
+      <div className='absolute inset-x-0 bottom-0 bg-black/60 p-4 backdrop-blur-sm'>
         <h3 className='mb-1 truncate text-base font-medium text-white'>
           {movie.title}
         </h3>

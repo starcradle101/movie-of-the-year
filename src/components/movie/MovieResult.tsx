@@ -78,7 +78,7 @@ export function MovieResult({
   ];
 
   return (
-    <section className='h-full overflow-y-auto py-8'>
+    <section className='h-full overflow-y-auto py-8 scrollbar-hide'>
       <ResultHeader username={username} />
       <MovieInfo
         movieTitle={movieTitle}
