@@ -1,0 +1,27 @@
+# Allow all crawlers
+User-agent: *
+
+# Allow crawling of all content
+Allow: /
+
+# Common directories to disallow
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*?*
+
+# Vite specific directories
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /public/
+Disallow: /dist/
+Disallow: /.vite/
+Disallow: /coverage/
+
+# Prevent crawling of development assets
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.map$
