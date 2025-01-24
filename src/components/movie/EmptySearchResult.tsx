@@ -2,17 +2,26 @@ export const EmptySearchResult = () => {
   return (
     <div
       role='alert'
-      aria-live='polite'
-      className='bg-vio flex h-48 flex-col items-center justify-center gap-4 p-4 text-white'
+      aria-live='assertive'
+      className='flex h-full flex-col items-center gap-4 pt-16 text-white'
     >
-      <div className='text-center'>
-        <h2 className='mb-2 text-lg font-medium' id='empty-results-title'>
-          검색 결과가 없습니다
-        </h2>
-        <p className='text-sm'>
-          <span className='sr-only'>제안:</span>
-          다른 검색어로 다시 시도해보세요
+      <h2
+        className='mb-3 text-xl font-medium lg:text-2xl'
+        id='empty-results-title'
+      >
+        검색 결과가 없습니다
+      </h2>
+      <div className='space-y-2 text-sm lg:text-base'>
+        <p className='mt-4 text-gray-300'>
+          <span aria-label='팁' role='img' className='mr-1'>
+            💡
+          </span>
+          검색이 잘 되지 않나요? 다음과 같이 검색해 보세요:
         </p>
+        <ul className='list-inside list-disc'>
+          <li>영화 제목을 정확하게 입력해주세요 (예: "인사이드 아웃")</li>
+          <li>띄어쓰기를 포함하여 검색해주세요</li>
+        </ul>
       </div>
     </div>
   );
