@@ -13,7 +13,7 @@ export function EmptyResult() {
         </p>
         <Link
           to='/'
-          className='mt-8 inline-block rounded-xl bg-emerald-500 px-8 py-3 transition-colors hover:bg-emerald-400'
+          className='mt-8 inline-block rounded-xl bg-emerald-500 px-8 py-3 text-[#121212] transition-colors hover:bg-emerald-400'
         >
           영화 선택하러 가기
         </Link>
