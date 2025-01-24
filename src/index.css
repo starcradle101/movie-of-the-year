@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  background-color: #121212;
+}
+
 @font-face {
   font-family: "Moneygraphy";
   src:
