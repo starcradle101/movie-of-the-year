@@ -19,7 +19,7 @@ export function MovieInfo({ movieTitle, posterPath, quote }: MovieInfoProps) {
                 : defaultPoster
             }
             alt={`${movieTitle} 포스터`}
-            className='mx-auto mb-4 aspect-[2/3] w-[342px] rounded-lg object-cover shadow-md'
+            className='mx-auto mb-4 aspect-[2/3] max-h-[513px] max-w-[342px] rounded-lg object-cover shadow-md'
           />
           <h2 className='text-center text-xl font-bold text-gray-800'>
             {movieTitle}
