@@ -1,4 +1,5 @@
 import defaultPoster from "/images/default-poster.png";
+import motyLogo from "../../../assets/moty-logo.svg";
 
 interface MovieInfoProps {
   movieTitle: string;
@@ -8,35 +9,38 @@ interface MovieInfoProps {
 
 export function MovieInfo({ movieTitle, posterPath, quote }: MovieInfoProps) {
   return (
-    <div className='mb-8 rounded-xl bg-gray-800 p-6'>
-      <div className='flex flex-col gap-6 md:flex-row'>
-        <div className='w-full md:w-1/2'>
+    <section aria-label='영화 정보' className='mx-auto my-8 max-w-sm'>
+      <div className='relative mx-4 rounded-2xl bg-gradient-to-br from-white to-gray-100 p-6 shadow-xl'>
+        <div className='border-b border-dashed border-gray-300 pb-4'>
           <img
             src={
               posterPath
                 ? `https://image.tmdb.org/t/p/w500${posterPath}`
                 : defaultPoster
             }
-            alt={movieTitle}
-            className='aspect-[2/3] w-full rounded-xl object-cover shadow-lg'
+            alt={`${movieTitle} 포스터`}
+            className='mx-auto mb-4 aspect-[2/3] w-full rounded-lg object-cover shadow-md'
+          />
+          <h2 className='text-center text-xl font-bold text-gray-800'>
+            {movieTitle}
+          </h2>
+        </div>
+
+        <div className='mt-4 space-y-4'>
+          <div className='text-center'>
+            <p className='text-xs text-gray-500'>한줄평</p>
+            <p className='mt-1 text-sm italic text-gray-700'>"{quote}"</p>
+          </div>
+
+          <img
+            src={motyLogo}
+            alt='MOTY 로고'
+            className='mx-auto mt-6 h-16 w-16'
           />
         </div>
-        <div className='flex w-full flex-col justify-between md:w-1/2'>
-          <div>
-            <h2 className='mb-6 break-words break-keep text-2xl font-bold'>
-              {movieTitle}
-            </h2>
-            <div className='space-y-4'>
-              <div>
-                <p className='text-sm text-gray-400'>한줄평</p>
-                <p className='break-words break-keep text-lg italic leading-relaxed'>
-                  "{quote}"
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
   );
 }
+
+export default MovieInfo;

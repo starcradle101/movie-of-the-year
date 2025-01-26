@@ -1,10 +1,10 @@
 import { useSearchParams } from "react-router";
+import { useMovieSearch } from "../../hooks/useMovieSearch";
+import { useMovieSelection } from "../../hooks/useMovieSelection";
 import { MovieList } from "../../components/movie/MovieList";
 import { SearchHeader } from "../../components/search/SearchHeader";
 import { SearchForm } from "../../components/search/SearchForm";
 import { MovieSelectionModal } from "../../components/movie/MovieSelectionModal";
-import { useMovieSearch } from "../../hooks/useMovieSearch";
-import { useMovieSelection } from "../../hooks/useMovieSelection";
 
 export default function SearchPage() {
   const [searchParams] = useSearchParams();
@@ -36,7 +36,7 @@ export default function SearchPage() {
         onSubmit={handleSubmit}
       />
 
-      <div className='scrollbar-hide flex-1 overflow-y-scroll'>
+      <div className='flex-1 overflow-y-scroll scrollbar-hide'>
         <MovieList
           movies={fetchState.data}
           isLoading={fetchState.loading}

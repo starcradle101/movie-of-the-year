@@ -87,7 +87,7 @@ export const MovieSelectionModal = ({
           </button>
           <button
             onClick={handleConfirm}
-            className='rounded-lg bg-emerald-500 px-4 py-2 text-white hover:bg-emerald-600'
+            className='rounded-lg bg-emerald-500 px-4 py-2 text-[#121212] hover:bg-emerald-600'
           >
             결과 확인하기
           </button>

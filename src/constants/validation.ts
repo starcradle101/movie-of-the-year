@@ -6,7 +6,7 @@ export const NAME_VALIDATION: ValidationRules = {
   },
   patterns: {
     emoji: /[\u{1F300}-\u{1F9FF}]/u,
-    validChars: /^[가-힣a-zA-Z0-9]+$/,
+    validChars: /^[ㄱ-ㅎ가-힣a-zA-Z0-9]+$/,
   },
   messages: {
     emoji: "이모지는 사용할 수 없어요.",

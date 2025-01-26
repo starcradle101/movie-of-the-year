@@ -12,6 +12,19 @@ export const useMovieSearch = () => {
     hasMore: true,
   });
 
+  const updateSearchTerm = (term: string) => {
+    if (!term) {
+      setFetchState((prev) => ({
+        ...prev,
+        data: [],
+        hasMore: false,
+        page: 1,
+        error: null,
+      }));
+    }
+    setSearchTerm(term);
+  };
+
   const handleSearch = async (term: string) => {
     if (!term.trim()) return;
 
@@ -74,7 +87,7 @@ export const useMovieSearch = () => {
 
   return {
     searchTerm,
-    setSearchTerm,
+    setSearchTerm: updateSearchTerm,
     fetchState,
     handleSearch,
     loadMore,
