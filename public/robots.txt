@@ -11,7 +11,6 @@ Disallow: /private/
 Disallow: /temp/
 Disallow: /*.json$
 Disallow: /*.xml$
-Disallow: /*?*
 
 # Vite specific directories
 Disallow: /node_modules/
