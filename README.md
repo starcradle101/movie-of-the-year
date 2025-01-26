@@ -4,6 +4,9 @@
 MOTY(모티)는 나만의 올해의 영화를 선택하고 한줄평을 남겨, 친구들에게 공유할 수 있는 웹 서비스입니다.
 [직접 사용해 보세요!](https://movie-of-the-year.vercel.app)
 
+## 🔭 MOTY 미리보기
+![최종](https://github.com/user-attachments/assets/5ff9deb2-a091-47b8-8227-c15eb3741b99)
+
 ## 🚀 주요 기능
 
 - 영화 검색 및 선택: TMDB API를 활용한 영화 검색 기능
