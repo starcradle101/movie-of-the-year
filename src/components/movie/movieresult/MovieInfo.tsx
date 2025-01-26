@@ -15,11 +15,12 @@ export function MovieInfo({ movieTitle, posterPath, quote }: MovieInfoProps) {
           <img
             src={
               posterPath
-                ? `https://image.tmdb.org/t/p/w500${posterPath}`
+                ? `https://image.tmdb.org/t/p/w342${posterPath}`
                 : defaultPoster
             }
             alt={`${movieTitle} 포스터`}
             className='mx-auto mb-4 aspect-[2/3] w-full rounded-lg object-cover shadow-md'
+            loading='eager'
           />
           <h2 className='text-center text-xl font-bold text-gray-800'>
             {movieTitle}

@@ -19,12 +19,11 @@ export const MovieItem = ({ movie, onClick }: MovieItemProps) => {
       <img
         src={
           movie.poster_path
-            ? `https://image.tmdb.org/t/p/w342${movie.poster_path}`
+            ? `https://image.tmdb.org/t/p/w185${movie.poster_path}`
             : defaultPoster
         }
         alt={movie.title}
         className='aspect-[2/3] w-full object-cover transition-opacity group-hover:opacity-75'
-        loading='lazy'
       />
       <div className='absolute inset-x-0 bottom-0 bg-black/60 p-4 backdrop-blur-sm'>
         <h3 className='mb-1 truncate text-base font-medium text-white'>
