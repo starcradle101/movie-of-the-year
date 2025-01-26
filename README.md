@@ -1,12 +1,14 @@
 # MOTY: 올해의 영화
+![ms-icon-310x310](https://github.com/user-attachments/assets/b1cafeea-84ad-466b-9e60-084ad66295e1)
 
 MOTY(모티)는 나만의 올해의 영화를 선택하고 한줄평을 남겨, 친구들에게 공유할 수 있는 웹 서비스입니다.
+[직접 사용해 보세요!](https://movie-of-the-year.vercel.app)
 
 ## 🚀 주요 기능
 
 - 영화 검색 및 선택: TMDB API를 활용한 영화 검색 기능
 - 사용자 이름 설정 기능
-- 카카오톡 공유, URL 복사
+- 카카오톡 공유, URL 복사, 결과 이미지 저장
 - 상태 유지: URL 쿼리스트링을 통한 상태 관리
 
 ## 🛠 기술 스택
