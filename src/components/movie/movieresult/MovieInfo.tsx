@@ -1,5 +1,4 @@
 import defaultPoster from "/images/default-poster.png";
-import motyLogo from "../../../assets/moty-logo.svg";
 
 interface MovieInfoProps {
   movieTitle: string;
@@ -28,15 +27,9 @@ export function MovieInfo({ movieTitle, posterPath, quote }: MovieInfoProps) {
 
         <div className='mt-4 space-y-4'>
           <div className='text-center'>
-            <p className='text-xs text-gray-500'>한줄평</p>
-            <p className='mt-1 text-sm italic text-gray-700'>"{quote}"</p>
+            <p className='text-lg text-gray-500'>한줄평</p>
+            <p className='mt-1 text-base italic text-gray-700'>"{quote}"</p>
           </div>
-
-          <img
-            src={motyLogo}
-            alt='MOTY 로고'
-            className='mx-auto mt-6 h-16 w-16'
-          />
         </div>
       </div>
     </section>
