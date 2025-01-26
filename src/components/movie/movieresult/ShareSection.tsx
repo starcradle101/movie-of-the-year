@@ -15,24 +15,27 @@ interface ShareSectionProps {
 
 export function ShareSection({ shareButtons }: ShareSectionProps) {
   return (
-    <div className='mb-12'>
-      <p className='mb-4 text-center text-lg text-gray-400'>공유하기</p>
-      <div className='grid grid-cols-2 gap-4'>
-        {shareButtons.map((button, index) => (
+    <section aria-labelledby='share-heading' className='mb-8'>
+      <h2 id='share-heading' className='mb-4 text-center text-lg'>
+        공유하기
+      </h2>
+      <div className='mx-auto grid max-w-sm grid-cols-3 gap-4'>
+        {shareButtons.map((button) => (
           <button
-            key={index}
+            key={button.text}
             onClick={button.onClick}
-            className={`flex flex-col items-center justify-center gap-2 rounded-xl p-4 transition-colors ${button.bgColor}`}
+            className={`flex flex-col items-center justify-center gap-2 rounded-xl p-2 transition-colors ${button.bgColor}`}
           >
             <img
+              aria-hidden='true'
               src={button.image.src}
-              alt={button.image.alt}
+              alt=''
               className='h-6 w-6'
             />
             <span className='text-sm'>{button.text}</span>
           </button>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

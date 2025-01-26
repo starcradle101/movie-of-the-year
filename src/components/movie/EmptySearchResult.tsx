@@ -11,11 +11,12 @@ export const EmptySearchResult = () => {
       >
         검색 결과가 없습니다
       </h2>
-      <div className='space-y-2 text-sm lg:text-base'>
-        <p className='mt-4 text-gray-300'>
-          <span aria-label='팁' role='img' className='mr-1'>
+      <div className='space-y-2 text-sm text-gray-200 lg:text-base'>
+        <p className='mt-4'>
+          <span aria-hidden='true' className='mr-1'>
             💡
           </span>
+          <span className='sr-only'>팁</span>
           검색이 잘 되지 않나요? 다음과 같이 검색해 보세요:
         </p>
         <ul className='list-inside list-disc'>
