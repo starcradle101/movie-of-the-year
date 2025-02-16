@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useFocusTrap } from "../../hooks/useFocusTrap";
 
 interface MovieSelectionModalProps {
   movie: Movie;
@@ -19,6 +20,9 @@ export const MovieSelectionModal = ({
 }: MovieSelectionModalProps) => {
   const [error, setError] = useState("");
   const maxLength = 50;
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useFocusTrap({ containerRef: modalRef, onClose });
 
   const handleQuoteChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -37,8 +41,17 @@ export const MovieSelectionModal = ({
   };
 
   return (
-    <div className='fixed inset-0 flex items-center justify-center bg-black/50'>
-      <div className='w-[90%] max-w-md rounded-2xl bg-gray-800 p-6'>
+    <div
+      className='fixed inset-0 flex items-center justify-center bg-black/50'
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='modal-title'
+    >
+      <div
+        className='w-[90%] max-w-md rounded-2xl bg-gray-800 p-6'
+        ref={modalRef}
+        tabIndex={-1}
+      >
         <h2 className='mb-6 text-center text-xl text-white'>
           <span className='text-emerald-400'>{username}</span>
           <span className='whitespace-pre-wrap'>님은</span>
