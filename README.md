@@ -1,10 +1,12 @@
 # MOTY: 올해의 영화
+
 ![ms-icon-310x310](https://github.com/user-attachments/assets/b1cafeea-84ad-466b-9e60-084ad66295e1)
 
 MOTY(모티)는 나만의 올해의 영화를 선택하고 한줄평을 남겨, 친구들에게 공유할 수 있는 웹 서비스입니다.
 [직접 사용해 보세요!](https://movie-of-the-year.vercel.app)
 
 ## 🔭 MOTY 미리보기
+
 ![최종](https://github.com/user-attachments/assets/5ff9deb2-a091-47b8-8227-c15eb3741b99)
 
 ## 🚀 주요 기능
@@ -77,7 +79,7 @@ movie-of-the-year
 ## 🤝 기여하기
 
 1. 이슈 생성
-2. 브랜치 생성 (`feature/기능명`)
+2. 브랜치 이동 (`review/moty`)
 3. 변경사항 커밋
 4. Pull Request 생성
 
